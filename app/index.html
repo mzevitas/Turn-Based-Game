@@ -4,12 +4,13 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
-    <title>turngame</title>
+    <title>The IRON BOTS</title>
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="../bower_components/normalize-css/normalize.css" />
+    <link href='http://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -23,19 +24,35 @@
   </head>
   <body>
 
-    <div class="hero-unit">
-      <h1>'Allo, 'Allo!</h1>
-      <p>You now have</p>
-      <ul>
-        <li>HTML5 Boilerplate</li>
-        <li>Normalize CSS</li>
-        <li>Sass</li>
-        <li>Modernizr</li>
-        <li>Bourbon & Neat</li>
-        <li>UnderscoreJS</li>
-      </ul>
-      <p>Don't forget to update your readme file!!</p>
+<div class="container">
+
+  <header>
+  <img src="http://f.cl.ly/items/1K240G3i0G3u252O2p2P/Iron-Yardlogo.png" ><span>The Game of Games</span>
+
+  <button>START</button>
+
+
+</header>
+  <div class="playing_field">
+
+    <div class="player_1">
+      <p class="name1"></p>
+      <div class="bar">
+        <div id="life"></div>
+        </div>
+      <button class = "p1bt">Attack</button>
     </div>
+    <div class="player_2">
+       <p class="name2"></p>
+       <button class = "p2bt">Attack</button>
+    </div>
+
+
+
+
+  </div><!-- playing_field end-->
+
+</div> <!-- container end-->
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
