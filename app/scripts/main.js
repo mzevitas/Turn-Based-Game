@@ -1,5 +1,6 @@
+
 var player= {
-  name: "Player 1",
+  name: ,
   health: 100,
 };
 
