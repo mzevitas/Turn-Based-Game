@@ -1,22 +1,10 @@
 var Admin = function (options) {
-
+ options = options || {};
   this.name = options.name;
   this.health = 100;
-  switch (this.type) {
-    case ".tim":
-      att = 10;
-      spec = 20;
-    break;
-    case ".james":
-      att = 15;
-      spec = 25;
-      break;
-    case ".jo":
-      att = 5;
-      spec = 30;
-    break;
+  this.avatar = options.avatar;
 
-  }
+
   this.attack = function (attacker) {
     attacker.health = attacker.health - 10;
   };
@@ -27,85 +15,96 @@ var Admin = function (options) {
 
 
 var Teacher = function (options){
-
+  var spec, att;
   options = options || {};
   this.name = options.name;
   this.type = options.type;
   this.health = 100;
   switch (this.type) {
-    case ".sarah":
+    case "1":
       att = 10;
       spec = 20;
     break;
-    case ".john":
+    case "2":
       att = 15;
       spec = 25;
       break;
-    case ".linda":
+    case "3":
       att = 5;
       spec = 30;
     break;
+    default:
+      break;
 
   }
-
   this.attack = function (attacker){
-
-  attacker.health = attacker.health - 10;
+  attacker.health = attacker.health - att;
 
   };
 
   this.special = function (attacker) {
-  attacker.health = attacker.health -20;
+  attacker.health = attacker.health - spec;
   };
 };
 
 
-//Starting the game
 
+var player1, player2;
 
-
-$('.fill .fill2 button').on('click', function (event){
+$('.fill button').on('click', function (event){
   event.preventDefault();
 
 
 
-  var player1 = new Teacher({
+   player1 = new Teacher({
     name: $(this).text(),
     type: $(this).attr('name'),
+    avatar: $(this).html()
+
 
   });
-//Create an Instance of my Bad guy
-   var player2 = new Admin({
-     name: $(this).text(),
-     type: $(this).attr('name'),
+$('.fill' ).click(function() {
+  $( this ).slideUp();
+
+  $('.name1').prepend(player1.name).find('.n1health').text(player1.health).find('.stageleft img').html(player1.avatar);
+
+});
 });
 
-     //set player/monster names
-     $('.name1').prepend(player1.name).find('.name1health').text(player1.health);
-     $('.name2').prepend(player2.name).find('.name2health').text(player2.health);
 
-     $('.fight').fadeIn;
-   });
-
-
-
-//winner is not random, and helth drops below 0;
-
-$('#fight').on('click', function (event){
+$('.fill2 button').on('click', function (event){
   event.preventDefault();
 
-//GoodGuy will attach BadGuy
-//BadGuy health will decrease
+    player2 = new Admin({
+     name: $(this).text(),
+     avatar: $(this).html()
+    //  type: $(this).attr('name'),
+});
+$('.fill2' ).click(function() {
+  $( this ).slideUp();
+  $('.name2').prepend(player2.name).find('.n2health').text(player2.health);
+});
+
+$('.modalDialog').hide();
+
+
+
+
+$('.attackbtn').on('click', function (event){
+  event.preventDefault();
+
+
+
 player1.attack(player2);
-$('.name2health').text(player2.health);
+$('.n2health').text(player2.health);
 
-//BadGuy will retaliate;
-//GoodGuy health will decrease
 player2.attack(player1);
-$('.name2health').text(player1.health);
+$('.n2health').text(player1.health);
 
-if (player1.health <= 0 || player2.health <= 0){
+// if (player1.health <= 0 || player2.health <= 0){
 
-}
 
+
+
+});
 });

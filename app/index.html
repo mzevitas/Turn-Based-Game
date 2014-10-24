@@ -29,7 +29,7 @@
   <header>
   <img src="http://f.cl.ly/items/1K240G3i0G3u252O2p2P/Iron-Yardlogo.png" ><span>The Game of Games</span>
 
-  <a href="#openModal"><button>START</button></a>
+  <a href="#openModal"><button class ="welcome">START</button></a>
 
 <div id="openModal" class="modalDialog">
 	<div>
@@ -41,48 +41,44 @@
 
   <h4>Player 1:</h4>
 <div class="fill">
-<button class="tim" name="1">Tim</button>
-<button  class="james" name="2">James</button>
-<button class="jo" name="3">Jo</button>
-</div>
-<br>
-<br>
-<h4>Player 2:</h4>
-<br>
-<div class="fill2">
-<button class="sarah" name="4">Sarah</button>
-<button  class="john" name="5">John</button>
-<button class="linda" name="6">Linda</button>
-</div>
+      <button class="tim" name="1" data-image="http://f.cl.ly/items/1o051I2V0j3S0a361G3d/timfinal.png">Tim</button>
+      <button  class="james" name="2">James</button>
+      <button class="jo" name="3">Jo</button>
+      </div>
+      <br>
+      <br>
 
+      <h4>Player 2:</h4>
+      <br>
+      <div class="fill2">
+      <button class="sarah" name="4">Sarah</button>
+      <button  class="john" name="5">John</button>
+      <button class="linda" name="6">Linda</button>
+       </div>
 
-
-
-</div>
-</div>
+      </div>
+  </div>
 </header>
 
 
 
   <div class="playing_field">
 
-    <div class="player_1">
-      <p class="name1"><span class ="name1health"></span></p>
-      <div class="bar">
-        <div id="life"></div>
-        </div>
-      <a href="#"><button class = "p1bt">Attack</button></a>
-    </div>
-    <div class="player_2">
-       <p class="name2"><span class ="name2health"></span></p>
-       <a href="#"><button class = "p2bt">Attack</button></a>
-    </div>
+    <div class="fight">
+         <button class="attackbtn">Attack <span class="bgname"></span> </button>
+        <p class="name1 "> <span class="n1health"></span></p>
+        <p class="name2 "> <span class="n2health"></span></p>
+        <br>
+
+      </div>
 
     <div class="fightstage">
       <div class="stageleft">
         <img src="http://f.cl.ly/items/1o051I2V0j3S0a361G3d/timfinal.png" alt="">
       </div>
-      <div class="stageright"></div>
+      <div class="stageright">
+        <img src="http://f.cl.ly/items/061t441g3e3C2W2W2B3k/sarahfinal.png" alt="">
+      </div>
     </div>
 
 
@@ -91,8 +87,7 @@
   </div><!-- playing_field end-->
 
 </div> <!-- container end-->
-
-    <script type="text/template">
+<script type="text/template">
       <p><%= name %></p>
       <p><%= name %></p>
 

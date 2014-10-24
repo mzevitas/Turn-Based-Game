@@ -2,6 +2,7 @@
 @import '../../bower_components/bourbon/dist/bourbon';
 @import '../../bower_components/bitters/app/assets/stylesheets/base';
 @import '../../bower_components/neat/app/assets/stylesheets/neat';
+
 $font: 'Press Start 2P', cursive;
 // Custom Styles
 body {
@@ -63,7 +64,6 @@ header {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	/* background: White rgba(0,0,0,0.8); */
 	z-index: 99999;
 	opacity:0;
 	-webkit-transition: opacity 400ms ease-in;
@@ -152,14 +152,19 @@ border-bottom-right-radius: 10px;
       text-shadow: black 0 3px
     }
 
-.player_1 {
+.name1 {
   float: left;
   font-size: 15px;
  }
 
-.player_2 {
+.name2{
   float: right;
   font-size: 15px;
+}
+
+.attackbtn {
+  display: block;
+  margin: 0 auto;
 }
 
 button {
@@ -188,10 +193,10 @@ font-size: 14px;
 
 .stageright {
   /* clear: both; */
-  border: 2px solid red;
+
   width: 200px;
-  height: 300px;
+  height: 275px;
   float: right;
   margin-right: 140px;
-  margin-top: 110px;
+  margin-top: 140px;
 }
