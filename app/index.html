@@ -33,28 +33,33 @@
 
 <div id="openModal" class="modalDialog">
 	<div>
+
 		<a href="#close" title="Close" class="close">X</a>
+
 		<h2>Welcome To "The Iron Bots"</h2>
     <h3> 'The Battle of Staff'</h3>
-    <br>
 
-    <form action="#" method="post" name="form_name" id="form_id" class="form_class" >
-
-<label>Player 1:</label>
-<input type="text" name="p1search" id="p1name" placeholder="Player 1 Name..." />
-
-<label>Player 2:</label>
-<input type="text" name="p2search" id="p2name" placeholder="Player 2 Name..." />
-
-<input type="button" name="submit_class" id="btn_class" value="Submit" />
-
-</form>
-
-
-
-	</div>
+  <h4>Player 1:</h4>
+<div class="fill">
+<button class="tim" name="1">Tim</button>
+<button  class="james" name="2">James</button>
+<button class="jo" name="3">Jo</button>
+</div>
+<br>
+<br>
+<h4>Player 2:</h4>
+<br>
+<div class="fill2">
+<button class="sarah" name="4">Sarah</button>
+<button  class="john" name="5">John</button>
+<button class="linda" name="6">Linda</button>
 </div>
 
+
+
+
+</div>
+</div>
 </header>
 
 
@@ -62,15 +67,22 @@
   <div class="playing_field">
 
     <div class="player_1">
-      <p class="name1"></p>
+      <p class="name1"><span class ="name1health"></span></p>
       <div class="bar">
         <div id="life"></div>
         </div>
       <a href="#"><button class = "p1bt">Attack</button></a>
     </div>
     <div class="player_2">
-       <p class="name2"></p>
+       <p class="name2"><span class ="name2health"></span></p>
        <a href="#"><button class = "p2bt">Attack</button></a>
+    </div>
+
+    <div class="fightstage">
+      <div class="stageleft">
+        <img src="http://f.cl.ly/items/1o051I2V0j3S0a361G3d/timfinal.png" alt="">
+      </div>
+      <div class="stageright"></div>
     </div>
 
 
@@ -80,6 +92,11 @@
 
 </div> <!-- container end-->
 
+    <script type="text/template">
+      <p><%= name %></p>
+      <p><%= name %></p>
+
+    </script>
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="../bower_components/jquery/dist/jquery.js"></script>

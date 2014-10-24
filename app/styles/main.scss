@@ -63,19 +63,14 @@ header {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background: rgba(0,0,0,0.8);
+	/* background: White rgba(0,0,0,0.8); */
 	z-index: 99999;
 	opacity:0;
 	-webkit-transition: opacity 400ms ease-in;
 	-moz-transition: opacity 400ms ease-in;
 	transition: opacity 400ms ease-in;
 	pointer-events: none;
-    img{
-      width: 10%;
-    }
-    .submit{
-      background-color: gray;
-      font-size: 10px;
+
 
     }
 }
@@ -86,7 +81,7 @@ header {
 
 .modalDialog > div {
 	width: 500px;
-  height: auto;
+  height: 300px;
 	position: relative;
 	margin: 10% auto;
 	padding: 5px 20px 13px 20px;
@@ -117,7 +112,23 @@ header {
 
 .close:hover { background: #00d9ff; }
 
+.fill {
+  margin-top: 45px;
+  margin-right: 40px;
+  button {
+    background-color: hsla(24,56%,60%,1);
+
+  }
 }
+.fill2 {
+  margin-top: 35px;
+  margin-right: 10px;
+    button {
+      background-color: hsla(24,56%,60%,1);
+  }
+}
+
+
 
 
 //Stat bar styles
@@ -160,4 +171,27 @@ font-size: 14px;
       color: hsla(240,1%,81%,1);
       background-color: hsla(354,63%,32%,1);
    }
+}
+
+.stageleft {
+  clear: both;
+  /* border: 2px solid red; */
+  width: 200px;
+  height: 275px;
+  float: left;
+  margin-left: 140px;
+  margin-top: 150px;
+    img{
+
+    }
+}
+
+.stageright {
+  /* clear: both; */
+  border: 2px solid red;
+  width: 200px;
+  height: 300px;
+  float: right;
+  margin-right: 140px;
+  margin-top: 110px;
 }

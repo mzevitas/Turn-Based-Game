@@ -1,0 +1,144 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'sublime', 'text' ]
+2 info using npm@2.1.3
+3 info using node@v0.10.32
+4 verbose node symlink /usr/local/bin/node
+5 silly cache add args [ 'sublime', null ]
+6 verbose cache add spec sublime
+7 silly cache add args [ 'text', null ]
+8 verbose cache add spec text
+9 silly cache add parsed spec { raw: 'sublime',
+9 silly cache add   scope: null,
+9 silly cache add   name: 'sublime',
+9 silly cache add   rawSpec: '',
+9 silly cache add   spec: '*',
+9 silly cache add   type: 'range' }
+10 verbose addNamed sublime@*
+11 verbose addNamed sublime@* not in flight; adding
+12 silly addNamed semver.valid null
+13 silly addNamed semver.validRange *
+14 silly addNameRange { name: 'sublime', range: '*', hasData: false }
+15 verbose mapToRegistry name sublime
+16 verbose mapToRegistry uri https://registry.npmjs.org/sublime
+17 silly cache add parsed spec { raw: 'text',
+17 silly cache add   scope: null,
+17 silly cache add   name: 'text',
+17 silly cache add   rawSpec: '',
+17 silly cache add   spec: '*',
+17 silly cache add   type: 'range' }
+18 verbose addNamed text@*
+19 verbose addNamed text@* not in flight; adding
+20 silly addNamed semver.valid null
+21 silly addNamed semver.validRange *
+22 silly addNameRange { name: 'text', range: '*', hasData: false }
+23 verbose mapToRegistry name text
+24 verbose mapToRegistry uri https://registry.npmjs.org/text
+25 verbose request on initialization, where is /sublime
+26 verbose request after pass 1, where is /sublime
+27 verbose request url raw /sublime
+28 verbose request resolving registry [ 'https://registry.npmjs.org/', './sublime' ]
+29 verbose request after pass 2, where is https://registry.npmjs.org/sublime
+30 verbose request no auth needed
+31 info attempt registry request try #1 at 11:16:59
+32 verbose request id 1a34ece5629a7a71
+33 http request GET https://registry.npmjs.org/sublime
+34 verbose request on initialization, where is /text
+35 verbose request after pass 1, where is /text
+36 verbose request url raw /text
+37 verbose request resolving registry [ 'https://registry.npmjs.org/', './text' ]
+38 verbose request after pass 2, where is https://registry.npmjs.org/text
+39 verbose request no auth needed
+40 info attempt registry request try #1 at 11:16:59
+41 http request GET https://registry.npmjs.org/text
+42 http 200 https://registry.npmjs.org/text
+43 silly registry.get cb [ 200,
+43 silly registry.get   { date: 'Thu, 23 Oct 2014 15:17:00 GMT',
+43 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+43 silly registry.get     etag: '"MDUYHC7HA24G6B9P442087HA"',
+43 silly registry.get     'content-type': 'application/json',
+43 silly registry.get     'cache-control': 'max-age=60',
+43 silly registry.get     'content-length': '909',
+43 silly registry.get     'accept-ranges': 'bytes',
+43 silly registry.get     via: '1.1 varnish',
+43 silly registry.get     age: '0',
+43 silly registry.get     'x-served-by': 'cache-atl6235-ATL',
+43 silly registry.get     'x-cache': 'MISS',
+43 silly registry.get     'x-cache-hits': '0',
+43 silly registry.get     'x-timer': 'S1414077420.084867,VS0,VE80',
+43 silly registry.get     vary: 'Accept',
+43 silly registry.get     'keep-alive': 'timeout=10, max=50',
+43 silly registry.get     connection: 'Keep-Alive' } ]
+44 silly addNameRange number 2 { name: 'text', range: '*', hasData: true }
+45 silly addNameRange versions [ 'text', [ '0.1.0' ] ]
+46 verbose addNamed text@0.1.0
+47 verbose addNamed text@0.1.0 not in flight; adding
+48 silly addNamed semver.valid 0.1.0
+49 silly addNamed semver.validRange 0.1.0
+50 verbose addRemoteTarball https://registry.npmjs.org/text/-/text-0.1.0.tgz not in flight; adding
+51 verbose addRemoteTarball [ 'https://registry.npmjs.org/text/-/text-0.1.0.tgz',
+51 verbose addRemoteTarball   '87f82a2e98eb5250ce0c397d46bfa34e299d1d63' ]
+52 info retry fetch attempt 1 at 11:17:00
+53 info attempt registry request try #1 at 11:17:00
+54 http fetch GET https://registry.npmjs.org/text/-/text-0.1.0.tgz
+55 http 404 https://registry.npmjs.org/sublime
+56 verbose headers { date: 'Thu, 23 Oct 2014 15:17:00 GMT',
+56 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+56 verbose headers   'content-type': 'application/json',
+56 verbose headers   'cache-control': 'max-age=0',
+56 verbose headers   'content-length': '52',
+56 verbose headers   'accept-ranges': 'bytes',
+56 verbose headers   via: '1.1 varnish',
+56 verbose headers   age: '0',
+56 verbose headers   'x-served-by': 'cache-atl6226-ATL',
+56 verbose headers   'x-cache': 'MISS',
+56 verbose headers   'x-cache-hits': '0',
+56 verbose headers   'x-timer': 'S1414077420.080790,VS0,VE110',
+56 verbose headers   'keep-alive': 'timeout=10, max=50',
+56 verbose headers   connection: 'Keep-Alive' }
+57 silly registry.get cb [ 404,
+57 silly registry.get   { date: 'Thu, 23 Oct 2014 15:17:00 GMT',
+57 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+57 silly registry.get     'content-type': 'application/json',
+57 silly registry.get     'cache-control': 'max-age=0',
+57 silly registry.get     'content-length': '52',
+57 silly registry.get     'accept-ranges': 'bytes',
+57 silly registry.get     via: '1.1 varnish',
+57 silly registry.get     age: '0',
+57 silly registry.get     'x-served-by': 'cache-atl6226-ATL',
+57 silly registry.get     'x-cache': 'MISS',
+57 silly registry.get     'x-cache-hits': '0',
+57 silly registry.get     'x-timer': 'S1414077420.080790,VS0,VE110',
+57 silly registry.get     'keep-alive': 'timeout=10, max=50',
+57 silly registry.get     connection: 'Keep-Alive' } ]
+58 http fetch 200 https://registry.npmjs.org/text/-/text-0.1.0.tgz
+59 silly fetchAndShaCheck shasum 87f82a2e98eb5250ce0c397d46bfa34e299d1d63
+60 verbose addTmpTarball /var/folders/3r/xw41xfjd3lz_ywy52bwfc_xw0000gp/T/npm-19706-c22a0545/registry.npmjs.org/text/-/text-0.1.0.tgz not in flight; verifying
+61 verbose addTmpTarball already have metadata; skipping unpack
+62 verbose afterAdd /Users/mikezevitas/.npm/text/0.1.0/package/package.json not in flight; writing
+63 verbose stack Error: 404 Not Found: sublime
+63 verbose stack     at RegClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:258:14)
+63 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:197:65)
+63 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:237:22)
+63 verbose stack     at Request.emit (events.js:98:17)
+63 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1146:14)
+63 verbose stack     at Request.emit (events.js:117:20)
+63 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1097:12)
+63 verbose stack     at IncomingMessage.emit (events.js:117:20)
+63 verbose stack     at _stream_readable.js:943:16
+63 verbose stack     at process._tickCallback (node.js:419:13)
+64 verbose statusCode 404
+65 verbose pkgid sublime
+66 verbose cwd /Users/mikezevitas/Projects/turngame
+67 error Darwin 14.0.0
+68 error argv "node" "/usr/local/bin/npm" "install" "sublime" "text"
+69 error node v0.10.32
+70 error npm  v2.1.3
+71 error code E404
+72 error 404 Not Found: sublime
+72 error 404
+72 error 404 'sublime' is not in the npm registry.
+72 error 404 You should bug the author to publish it (or use the name yourself!)
+72 error 404
+72 error 404 Note that you can also install from a
+72 error 404 tarball, folder, http url, or git url.
+73 verbose exit [ 1, true ]
