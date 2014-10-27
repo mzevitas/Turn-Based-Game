@@ -4,31 +4,91 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
-    <title>turngame</title>
+    <title>The IRON BOTS</title>
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
     <link rel="stylesheet" href="styles/vendor.css">
-
+<link href='http://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="styles/main.css">
 
     <script src="scripts/vendor/modernizr.js"></script>
   </head>
   <body>
 
-    <div class="hero-unit">
-      <h1>'Allo, 'Allo!</h1>
-      <p>You now have</p>
-      <ul>
-        <li>HTML5 Boilerplate</li>
-        <li>Normalize CSS</li>
-        <li>Sass</li>
-        <li>Modernizr</li>
-        <li>Bourbon & Neat</li>
-        <li>UnderscoreJS</li>
-      </ul>
-      <p>Don't forget to update your readme file!!</p>
+<div class="container">
+
+  <header>
+
+  <img src="http://f.cl.ly/items/1K240G3i0G3u252O2p2P/Iron-Yardlogo.png" ><span>The Game of Games</span>
+
+  <a href="#openModal"><button class ="welcome">START</button></a>
+
+<div id="openModal" class="modalDialog">
+	<div>
+
+		<a href="#close" title="Close" class="close">X</a>
+
+		<h2>Welcome To "The Iron Bots"</h2>
+    <h3> 'The Battle of Staff'</h3>
+
+  <h4>Player 1:</h4>
+<div class="fill">
+      <button class="tim" name="1" data="http://f.cl.ly/items/1o051I2V0j3S0a361G3d/timfinal.png">Tim</button>
+      <button  class="james" name="2">James</button>
+      <button class="jo" name="3">Jo</button>
+      </div>
+      <br>
+      <br>
+
+      <h4>Player 2:</h4>
+      <br>
+      <div class="fill2">
+      <button class="sarah" name="4">Sarah</button>
+      <button  class="john" name="5">John</button>
+      <button class="linda" name="6">Linda</button>
+       </div>
+
+      </div>
+  </div>
+</header>
+
+
+
+  <div class="playing_field">
+
+    <div class="fight">
+         <button class="attackbtn">Attack <span class="bgname"></span> </button>
+        <p class="name1 "> <span class="n1health"></span></p>
+        <p class="name2 "> <span class="n2health"></span></p>
+        <br>
+
+      </div>
+
+    <div class="fightstage">
+      <div class="stageleft">
+      <img src="">
+      </div>
+      <div class="stageright">
+         <img src="" alt="">
+      </div>
     </div>
 
+
+
+
+  </div><!-- playing_field end-->
+<embed loop="true" src="" hidden="true" ></embed>
+</div> <!-- container end-->
+<script type="text/template">
+      <p><%= name %></p>
+      <p><%= name %></p>
+
+    </script>
+<script type="text/template">
+        <img><%= img %></img>
+        <img><%= img %></img>
+
+      </script>
     <script src="scripts/vendor.js"></script>
 
         <script src="scripts/main.js"></script>
